@@ -6,16 +6,11 @@ public class tpmatrices2{
         //declaro la matriz
         char [][] estacionamiento  ;
         //declaro las variables
-        int largo, ancho, opcion;
+        int opcion;
 
-//define el ancho y el largo de la matriz con el scanner
-        System.out.println("Ingrese el largo de la matriz: ");
-        largo = sc.nextInt();
-        System.out.println("Ingrese el ancho de la matriz: ");
-        ancho = sc.nextInt();
 
 //crea el arreglo de estacionamiento con el largo y el ancho ingresados
-            estacionamiento = new char[largo][ancho];
+            estacionamiento = new char[5][6];
 
             do { 
                 System.out.println("Seleccione una opción:");
@@ -87,7 +82,7 @@ public static void mostrarMatriz(char[][] estacionamiento) {
     public static void cargarMatriz(char[][] estacionamiento, Scanner sc) {
         for (int i = 0; i < estacionamiento.length; i++) {
             for (int j = 0; j < estacionamiento[i].length; j++) {
-                System.out.println("Ingrese la temperatura para la posición [" + i + "][" + j + "]: ");
+                System.out.println("Ingrese si esta ocupado, libre o reservado para la posición [" + i + "][" + j + "]: ");
                 estacionamiento[i][j] = Character.toUpperCase(sc.next().charAt(0));
             }
         }
