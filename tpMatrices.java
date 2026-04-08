@@ -147,6 +147,7 @@ public static void puntosCalientes(int [][] temperaturas) {
                 System.out.println("Punto caliente encontrado en la posición [" + i + "][" + j + "] con valor: " + temperaturas[i][j]);
             }
         }
+        System.out.println("No se encontraron puntos calientes en la matriz.");
     }
 }
 }
